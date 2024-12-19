@@ -1,0 +1,1 @@
+I will generate a 3D model with images, make predictions using adversarial neural networks and a comparative with unet and unet ++ in this activity
