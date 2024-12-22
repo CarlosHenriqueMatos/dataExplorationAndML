@@ -1,6 +1,6 @@
 ## Next Steps
 
-### Add another kings of neural networks
+### Add another kinds of neural networks
 
 ### use another metrics to data treatment
 
