@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <title>Ethical AI Submission</title>
+</head>
+
+<body>
+
+  <!-- Code to display the graph -->
+
+
+  <div class="container-fluid"
+    style="background-color: #32ADE6; padding-bottom: 1rem; padding-top: 1rem; margin-bottom: 5rem;">
+    <div class="row-fluid py-2" style="color:#FFFFFF">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+        <h1>Eco-Mind AI</h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h1>Inputs to our Model</h2>
+      </div>
+      <div class="col-md-1">
+
+      </div>
+      <div class="col-md-3">
+        <h3>Predicted Daily Heating Degree Days</h3>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" style="margin-bottom: 2rem;">
+    <div class="row">
+
+      <div class="col-md-2">
+
+        <label for="input1" class="form-label">Hourly Sky Conditions</label>
+        <input type="text" class="form-control mb-2" id="input1" placeholder="Enter number here">
+        <label for="input2" class="form-label">Hourly Visibility</label>
+        <input type="text" class="form-control mb-2" id="input2" placeholder="Enter number here">
+        <label for="input3" class="form-label">Hourly Present WeatherType</label>
+        <input type="text" class="form-control mb-4" id="input3" placeholder="Enter number here">
+        <label for="input4" class="form-label">Hourly Dry Bulb Temperature Celsius</label>
+        <input type="text" class="form-control mb-2" id="input4" placeholder="Enter number here">
+        <label for="input5" class="form-label">Hourly Wet Bulb Temperature Celsius</label>
+        <input type="text" class="form-control mb-2" id="input5" placeholder="Enter number here">
+        <label for="input6" class="form-label">Hourly Dew Point Temperature Celsius</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input6"
+          placeholder="Enter number here">
+        <label for="input7" class="form-label">Hourly Relative Humidity</label>
+        <input type="text" class="form-control mb-2" id="input7" placeholder="Enter number here">
+        <label for="input8" class="form-label">Hourly Wind Speed</label>
+        <input type="text" class="form-control mb-4" id="input8" placeholder="Enter number here">
+        <button type="button" class="btn btn-outline-primary" id="submit-button">Submit</button>
+      </div>
+      <div class="col-md-2">
+        <label for="input9" class="form-label">Hourly Wind Direction</label>
+        <input type="text" class="form-control mb-2" id="input9" placeholder="Enter number here">
+        <label for="input10" class="form-label">Hourly Wind Gust Speed</label>
+        <input type="text" class="form-control mb-2" id="input10" placeholder="Enter number here">
+        <label for="input11" class="form-label">Hourly Station Pressure</label>
+        <input type="text" class="form-control mb-4" id="input11" placeholder="Enter number here">
+        <label for="input12" class="form-label">Hourly Pressure Tendency</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input12"
+          placeholder="Enter number here">
+        <label for="input13" class="form-label">Hourly Pressure Change</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input13"
+          placeholder="Enter number here">
+        <label for="input14" class="form-label">Hourly Sea Level Pressure</label>
+        <input type="text" class="form-control mb-4" id="input14" placeholder="Enter number here">
+        <label for="input15" class="form-label">Hourly Precipitation</label>
+        <input type="text" class="form-control mb-2" id="input15" placeholder="Enter number here">
+        <label for="input16" class="form-label">Hourly Altimeter Setting</label>
+        <input type="text" class="form-control mb-4" id="input16" placeholder="Enter number here">
+      </div>
+      <div class="col-md-2">
+        <label for="input17" class="form-label">Daily Average Dry Bulb Temperature</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input17"
+          placeholder="Enter number here">
+        <label for="input18" class="form-label">Daily Departure From Normal Average Temperature</label>
+        <input type="text" class="form-control mb-2" id="input18" placeholder="Enter number here">
+        <label for="input19" class="form-label">Daily Average Relative Humidity</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input19"
+          placeholder="Enter number here">
+        <label for="input20" class="form-label">Daily Average Wet Bulb Temperature</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input20"
+          placeholder="Enter number here">
+        <label for="input21" class="form-label">Daily Sunrise</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input21"
+          placeholder="Enter number here">
+        <label for="input22" class="form-label">Daily Sunset</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input22"
+          placeholder="Enter number here">
+        <label for="input23" class="form-label">Daily Precipitation</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input23"
+          placeholder="Enter number here">
+        <label for="input24" class="form-label">Daily Snowfall</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input24"
+          placeholder="Enter number here">
+      </div>
+      <div class="col-md-2">
+        <label for="input25" class="form-label">Daily Snow Depth</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input25"
+          placeholder="Enter number here">
+        <label for="input26" class="form-label">Daily Average Station Pressure</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input26"
+          placeholder="Enter number here">
+        <label for="input27" class="form-label">Daily Average Sea Level Pressure</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input27"
+          placeholder="Enter number here">
+        <label for="input28" class="form-label">Daily Average Wind Speed</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input28"
+          placeholder="Enter number here">
+        <label for="input29" class="form-label">Daily Peak Wind Speed</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input29"
+          placeholder="Enter number here">
+        <label for="input30" class="form-label">Peak Wind Direction</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input30"
+          placeholder="Enter number here">
+        <label for="input31" class="form-label">Daily Sustained Wind Speed</label>
+        <input type="text" class="form-control mb-2" style="border: 1px solid red;" id="input31"
+          placeholder="Enter number here">
+        <label for="input32" class="form-label">Daily Sustained Wind Direction</label>
+        <input type="text" class="form-control mb-4" style="border: 1px solid red;" id="input32"
+          placeholder="Enter number here">
+      </div>
+      <div class="col-md-1">
+        <p style="color:royalblue;">Submit button below and to the left!</p>
+
+      </div>
+      <div class="col-md-3">
+
+        <div id="prediction-result"
+          style="background-color: #f8f9fa; padding: 1rem; border: 1px solid #ddd; border-radius: 4px;">
+          <p id="result-display">Your prediction will appear here...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2">
+        <label for="mass-input" class="form-label">Sets Value For All Input Fields</label>
+        <input type="text" class="form-control mb-2" id="mass-input" placeholder="Enter a number">
+        <button type="button" class="btn btn-outline-secondary" id="mass-input-button">Fill All</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p style="color: royalblue;">Please note - if you do not fill in a
+          value, we will set it to be 0.</p>
+        <p style="color: red;">The text inputs with a red border around them
+          have great influence on the model, and we have highlighted them to
+          represent this. You may leave the text inputs without this red border
+          blank, and doing so will not impact the model prediction very much. It
+          is recommended that you fill up the model inputs for each red-bordered
+          text input field.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <div class="container">
+    <h2>Explaining Our Model...</h2>
+  </div>
+
+  <div class="container" style="margin-bottom: 3rem;">
+    <div class="row">
+      <div class="col-md-12">
+        <h3>LIME
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        </h1>
+        <img src="/static/images/LIME-1.png" width="80%" style="margin-bottom: 2rem;">
+        <img src="/static/images/LIME-2.png" width="80%" style="margin-bottom: 2rem;">
+        <img src="/static/images/LIME-FEATURE-1.png" width="80%" style="margin-bottom: 2rem;">
+        <img src="/static/images/LIME-FEATURE-2.png" width="80%" style="margin-bottom: 2rem;">
+        <img src="/static/images/LIME-FEATURE-3.png" width="80%" style="margin-bottom: 2rem;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>Local Explanation of Features</h3>
+        <img src="/static/images/COLUMNS-GRAPH.png" width="80%" style="margin-bottom: 2rem;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <h3>SHAP</h1>
+          <img src="/static/images/SHAP.png" width="80%">
+      </div>
+    </div>
+  </div>
+
+  </div>
+  <script>
+    document.getElementById('mass-input-button').addEventListener('click', function () {
+      const mass_value = document.getElementById('mass-input').value; // Get value from bulk input field
+
+      for (let i = 1; i < 33; i++) {
+        const input_field = document.getElementById('input' + i);
+        input_field.value = mass_value;
+      }
+    });
+
+    document.getElementById('submit-button').addEventListener('click', function (event) {
+      event.preventDefault(); // Prevent page reload
+
+      // Retrieve user input
+
+      let nice_list = [];
+
+      for (let i = 1; i < 33; i++) {
+        const current_var = document.getElementById('input' + i).value;
+        if (!current_var) {
+          nice_list.push(0);
+        }
+        else {
+          nice_list.push(parseFloat(current_var));
+        }
+      }
+
+      const data = {
+        values_list: nice_list
+      };
+
+      fetch('/process', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+      })
+        .then(response => response.json())
+        .then(data => {
+          // Update result-display with response
+
+          document.getElementById('result-display').textContent = data.data;
+          console.log("nice!");
+        })
+        .catch(error => {
+          document.getElementById('result-display').textContent = "An error occurred.";
+        });
+
+      // Validate inputs and create a message
+      // message = `You entered: Age - ${nice_list[0]}, Weight - ${nice_list[1]}, Height - ${nice_list[2]}`;
+
+      // Display the message
+      // document.getElementById('result-display').textContent = message;
+    });
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
